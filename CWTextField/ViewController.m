@@ -23,6 +23,7 @@
     self.view.backgroundColor   = UIColor.groupTableViewBackgroundColor;
     CGFloat width               = CGRectGetWidth(self.view.bounds);
     self.textFieldView          = [[CWTextFieldView alloc] initWithFrame:CGRectMake(20, 100, (width - 40), 30) done:^(NSString * _Nonnull text) {
+        
         NSLog(@"text: %@", text);
     }];
     [self.view addSubview:self.textFieldView];
